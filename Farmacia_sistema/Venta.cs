@@ -28,13 +28,12 @@ namespace Farmacia_sistema
 
                 //Asignamos los valores a las posiciones segun corresponda
                 txtcodigo.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                comboBoxempleado.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                txtfechaventa.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                txttotal.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                comboBoxCliente.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                comboBoxCliente.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                comboBoxempleado.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                txttotal.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
                 comboBoxTipoPago.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
 
-                var valorCelda = dataGridView1.CurrentRow.Cells[4].Value;
+                var valorCelda = dataGridView1.CurrentRow.Cells[3].Value;
 
                 if (DateTime.TryParse(valorCelda?.ToString(), out DateTime fecha))
                 {

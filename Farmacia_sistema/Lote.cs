@@ -71,13 +71,13 @@ namespace Farmacia_sistema
                 txtcodigo.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 txtcodigolote.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                 txtnombre.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                txtcantidad.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                txtdireccion.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-                txtpreciounidad.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-                txtfechaventa.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-                txtpreciototal.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-                txtvencimiento.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
-                txtfabricacion.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
+                txtfabricacion.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                txtvencimiento.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                txtcantidad.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                txtdireccion.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+                txtpreciounidad.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+                txtpreciototal.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+                txtfechaventa.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
 
             }
         }

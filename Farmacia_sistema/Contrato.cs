@@ -72,9 +72,8 @@ namespace Farmacia_sistema
                 //Asignamos los valores a las posiciones segun corresponda
                 txtcodigo.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 comboBoxEmpleado.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                comboBoxFFinal.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                comboBoxTContrato.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-                txtobservacion.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                comboBoxTContrato.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                txtobservacion.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
 
 
                 var valorCelda = dataGridView1.CurrentRow.Cells[2].Value;
@@ -86,6 +85,16 @@ namespace Farmacia_sistema
                 else
                 {
                     comboBoxFInicio.Text = ""; // O puedes poner "Fecha inválida"
+                }
+                var valorCeldaFecha = dataGridView1.CurrentRow.Cells[3].Value;
+
+                if (DateTime.TryParse(valorCelda?.ToString(), out DateTime fechafinal))
+                {
+                    comboBoxFFinal.Text = fecha.ToString("dd/MM/yyyy");
+                }
+                else
+                {
+                    comboBoxFFinal.Text = ""; // O puedes poner "Fecha inválida"
                 }
             }
         }

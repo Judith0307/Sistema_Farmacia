@@ -64,8 +64,8 @@ namespace Farmacia_sistema
 
                 //Asignamos los valores a las posiciones segun corresponda
                 txtcodigo.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                txtruc.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                txtnombre.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                txtnombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                txtruc.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
                 txtdireccion.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString(); 
                 txttelefono.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
                 txtcorreo.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
