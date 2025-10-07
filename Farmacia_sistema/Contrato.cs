@@ -47,7 +47,8 @@ namespace Farmacia_sistema
 
                 dataGridView1.DataSource = tabla;
 
-                //dataGridView1.Columns["codigo"].Visible = false;
+                dataGridView1.Columns["idcontrato"].Visible = false;
+                dataGridView1.Columns["estado"].Visible = false;
 
                 //Estilo de encabezado
                 dataGridView1.EnableHeadersVisualStyles = false;
@@ -74,6 +75,8 @@ namespace Farmacia_sistema
                 comboBoxEmpleado.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                 comboBoxTContrato.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
                 txtobservacion.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+                comboBoxCargo.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+                txtdetalles.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
 
 
                 var valorCelda = dataGridView1.CurrentRow.Cells[2].Value;
