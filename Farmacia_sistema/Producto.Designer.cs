@@ -62,8 +62,6 @@
             this.comboBoxcategoria = new System.Windows.Forms.ComboBox();
             this.comboBoxalmacen = new System.Windows.Forms.ComboBox();
             this.comboBoxlote = new System.Windows.Forms.ComboBox();
-            this.txtvencimiento = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -73,6 +71,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtfechaIngreso = new System.Windows.Forms.ComboBox();
+            this.txtvencimiento = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -381,20 +381,6 @@
             this.comboBoxlote.Size = new System.Drawing.Size(310, 21);
             this.comboBoxlote.TabIndex = 45;
             // 
-            // txtvencimiento
-            // 
-            this.txtvencimiento.Location = new System.Drawing.Point(199, 256);
-            this.txtvencimiento.Name = "txtvencimiento";
-            this.txtvencimiento.Size = new System.Drawing.Size(236, 20);
-            this.txtvencimiento.TabIndex = 46;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(199, 284);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(236, 20);
-            this.dateTimePicker2.TabIndex = 47;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
@@ -495,20 +481,35 @@
             this.dataGridView1.TabIndex = 53;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // txtfechaIngreso
+            // 
+            this.txtfechaIngreso.FormattingEnabled = true;
+            this.txtfechaIngreso.Location = new System.Drawing.Point(199, 283);
+            this.txtfechaIngreso.Name = "txtfechaIngreso";
+            this.txtfechaIngreso.Size = new System.Drawing.Size(236, 21);
+            this.txtfechaIngreso.TabIndex = 55;
+            // 
+            // txtvencimiento
+            // 
+            this.txtvencimiento.Location = new System.Drawing.Point(199, 256);
+            this.txtvencimiento.Name = "txtvencimiento";
+            this.txtvencimiento.Size = new System.Drawing.Size(236, 20);
+            this.txtvencimiento.TabIndex = 56;
+            // 
             // Producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1050, 612);
+            this.Controls.Add(this.txtvencimiento);
+            this.Controls.Add(this.txtfechaIngreso);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnproductos);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.txtvencimiento);
             this.Controls.Add(this.comboBoxlote);
             this.Controls.Add(this.comboBoxalmacen);
             this.Controls.Add(this.comboBoxcategoria);
@@ -592,8 +593,6 @@
         private System.Windows.Forms.ComboBox comboBoxcategoria;
         private System.Windows.Forms.ComboBox comboBoxalmacen;
         private System.Windows.Forms.ComboBox comboBoxlote;
-        private System.Windows.Forms.DateTimePicker txtvencimiento;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label19;
@@ -603,5 +602,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox txtfechaIngreso;
+        private System.Windows.Forms.TextBox txtvencimiento;
     }
 }
