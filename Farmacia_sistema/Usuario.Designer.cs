@@ -125,6 +125,7 @@
             this.txtcontraseña.Name = "txtcontraseña";
             this.txtcontraseña.Size = new System.Drawing.Size(339, 20);
             this.txtcontraseña.TabIndex = 17;
+            this.txtcontraseña.UseSystemPasswordChar = true;
             // 
             // txtcodigo
             // 

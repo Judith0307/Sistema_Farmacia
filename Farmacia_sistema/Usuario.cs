@@ -30,7 +30,7 @@ namespace Farmacia_sistema
             {
                 MySqlConnection conexion = conexionbd.AbrirConexion();
                 //Consulta sql (asegurate de que la tabla se 'clientes' o ajustar el nombre)
-                String consulta = "SELECT * FROM usuario";
+                String consulta = "SELECT u.idusuario, u.codigo, u.contraseña, u.estado_usuario, c.nombre_cargo FROM usuario u JOIN cargo c ON u.idcargo = c.idcargo;";
 
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
@@ -39,7 +39,8 @@ namespace Farmacia_sistema
 
                 dataGridView1.DataSource = tabla;
 
-                //dataGridView1.Columns["codigo"].Visible = false;
+                dataGridView1.Columns["idusuario"].Visible = false;
+                dataGridView1.Columns["estado_usuario"].Visible = false;
 
                 //Estilo de encabezado
                 dataGridView1.EnableHeadersVisualStyles = false;
@@ -66,7 +67,7 @@ namespace Farmacia_sistema
                 txtcodigo.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                 txtcontraseña.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
 
-                comboBox1.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                comboBox1.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             }
         }
         private void CargarCargos()
