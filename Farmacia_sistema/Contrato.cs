@@ -1,14 +1,17 @@
 ﻿using MySql.Data.MySqlClient;
+using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Contracts;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace Farmacia_sistema
 {
@@ -38,7 +41,7 @@ namespace Farmacia_sistema
             {
                 MySqlConnection conexion = conexionbd.AbrirConexion();
                 //Consulta sql (asegurate de que la tabla se 'clientes' o ajustar el nombre)
-                String consulta = "SELECT * FROM contrato";
+                String consulta = "SELECT c.idcontrato, e.nombre_empleado, tc.nombre_tipo, ca.nombre_cargo, c.fecha_inicio, c.fecha_fin, c.detalles, c.observaciones_contrato, c.estado FROM contrato c JOIN empleado e ON c.idempleado = e.idempleado JOIN tipo_contrato tc ON c.idtipo_contrato = tc.idtipo_contrato JOIN cargo ca ON c.idcargo = ca.idcargo;";
 
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
@@ -73,13 +76,13 @@ namespace Farmacia_sistema
                 //Asignamos los valores a las posiciones segun corresponda
                 txtcodigo.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 comboBoxEmpleado.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                comboBoxTContrato.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-                txtobservacion.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-                comboBoxCargo.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-                txtdetalles.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+                comboBoxTContrato.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                comboBoxCargo.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                txtdetalles.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+                txtobservacion.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
 
 
-                var valorCelda = dataGridView1.CurrentRow.Cells[2].Value;
+                var valorCelda = dataGridView1.CurrentRow.Cells[4].Value;
 
                 if (DateTime.TryParse(valorCelda?.ToString(), out DateTime fecha))
                 {
@@ -89,11 +92,11 @@ namespace Farmacia_sistema
                 {
                     comboBoxFInicio.Text = ""; // O puedes poner "Fecha inválida"
                 }
-                var valorCeldaFecha = dataGridView1.CurrentRow.Cells[3].Value;
+                var valorCeldaFecha = dataGridView1.CurrentRow.Cells[5].Value;
 
-                if (DateTime.TryParse(valorCelda?.ToString(), out DateTime fechafinal))
+                if (DateTime.TryParse(valorCeldaFecha?.ToString(), out DateTime fechafinal))
                 {
-                    comboBoxFFinal.Text = fecha.ToString("dd/MM/yyyy");
+                    comboBoxFFinal.Text = fechafinal.ToString("dd/MM/yyyy");
                 }
                 else
                 {
