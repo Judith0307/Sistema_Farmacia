@@ -16,7 +16,7 @@ namespace Farmacia_sistema
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Contrato());
+            Application.Run(new Distrito());
         }
     }
 }
