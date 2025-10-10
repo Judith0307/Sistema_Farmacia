@@ -26,7 +26,10 @@ namespace Farmacia_sistema
             {
                 MySqlConnection conexion = conexionbd.AbrirConexion();
                 //Consulta sql (asegurate de que la tabla se 'clientes' o ajustar el nombre)
-                String consulta = "SELECT * FROM producto";
+                String consulta = "SELECT p.idproducto, p.nombre_producto, p.precio, p.stock, p.tipo_medicamento, p.instrucciones, p.fecha_vencimiento, p.fecha_ingreso, p.requiere_receta, pr.nombre_proveedor AS proveedor, " +
+                    "c.nombre_categoria AS categoria, m.nombre_marca AS marca, mo.nombre_modelo AS modelo, um.nombre_unidad AS unidad_medidad, l.nombre_laboratorio AS laboratorio, lo.codigo_lote AS lote, a.nombre_almacen AS almacen " +
+                    "FROM producto p JOIN marca m ON p.idmarca = m.idmarca JOIN modelo mo ON p.idmodelo = mo.idmodelo JOIN categoria c ON p.idcategoria = c.idcategoria JOIN unidad_medidad um ON p.idunidad_medidad = um.idunidad_medidad " +
+                    "JOIN laboratorio l ON p.idlaboratorio = l.idlaboratorio JOIN proveedor pr ON p.idproveedor = pr.idproveedor JOIN lote lo ON p.idlote = lo.idlote JOIN almacen a ON p.idalmacen = a.idalmacen;";
 
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
@@ -276,22 +279,22 @@ namespace Farmacia_sistema
                 //Asignamos los valores a las posiciones segun corresponda
                 txtcodigo.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 txtnombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                comboBoxmarca.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                comboBoxmodelo.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                comboBoxcategoria.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-                comboBoxunidadmedida.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-                comboBoxlaboratorio.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-                comboBoxproveedor.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-                txtinstrucciones.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
-                txtprecio.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
-                txtstock.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
-                txttipo.Text = dataGridView1.CurrentRow.Cells[13].Value.ToString();
-                txtreceta.Text = dataGridView1.CurrentRow.Cells[14].Value.ToString();
+                txtprecio.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                txtstock.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                txttipo.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                txtinstrucciones.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                txtreceta.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+                comboBoxproveedor.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
+                comboBoxcategoria.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
+                comboBoxmarca.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
+                comboBoxmodelo.Text = dataGridView1.CurrentRow.Cells[12].Value.ToString();
+                comboBoxunidadmedida.Text = dataGridView1.CurrentRow.Cells[13].Value.ToString();
+                comboBoxlaboratorio.Text = dataGridView1.CurrentRow.Cells[14].Value.ToString();
                 comboBoxlote.Text = dataGridView1.CurrentRow.Cells[15].Value.ToString();
                 comboBoxalmacen.Text = dataGridView1.CurrentRow.Cells[16].Value.ToString();
             }
 
-            var valorCelda = dataGridView1.CurrentRow.Cells[11].Value;
+            var valorCelda = dataGridView1.CurrentRow.Cells[6].Value;
 
             if (DateTime.TryParse(valorCelda?.ToString(), out DateTime fecha))
             {
@@ -302,11 +305,11 @@ namespace Farmacia_sistema
                 txtfechaIngreso.Text = ""; // O puedes poner "Fecha inválida"
             }
 
-            var valorVencimiento = dataGridView1.CurrentRow.Cells[11].Value;
+            var valorVencimiento = dataGridView1.CurrentRow.Cells[7].Value;
 
-            if (DateTime.TryParse(valorCelda?.ToString(), out DateTime fechaV))
+            if (DateTime.TryParse(valorVencimiento?.ToString(), out DateTime fechaV))
             {
-                txtvencimiento.Text = fecha.ToString("dd/MM/yyyy");
+                txtvencimiento.Text = fechaV.ToString("dd/MM/yyyy");
             }
             else
             {
