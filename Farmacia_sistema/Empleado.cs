@@ -26,7 +26,10 @@ namespace Farmacia_sistema
             {
                 MySqlConnection conexion = conexionbd.AbrirConexion();
                 //Consulta sql (asegurate de que la tabla se 'clientes' o ajustar el nombre)
-                String consulta = "SELECT * FROM empleado";
+                String consulta = "SELECT e.idempleado, e.nombre_empleado, e.apellido_empleado, e.numero_documento, td.nombre_documento AS tipo_documento, e.telefono, e.correo, p.nombre_profesion AS profesion, " +
+                    "g.nombre_genero AS genero, e.edad_actual, e.fecha_nacimiento, e.direccion_actual, d.nombre_distrito AS distrito, e.observaciones, e.estado " +
+                    "FROM empleado e JOIN tipo_documento td ON e.idtipo_documento = td.idtipo_documento JOIN distrito d ON e.iddistrito = d.iddistrito JOIN profesion p ON e.idprofesion = p.idprofesion " +
+                    "JOIN genero g ON e.idgenero = g.idgenero WHERE e.estado = 1;";
 
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
@@ -36,6 +39,7 @@ namespace Farmacia_sistema
                 dataGridView1.DataSource = tabla;
 
                 dataGridView1.Columns["idempleado"].Visible = false;
+                dataGridView1.Columns["estado"].Visible = false;
 
                 //Estilo de encabezado
                 dataGridView1.EnableHeadersVisualStyles = false;
@@ -76,19 +80,19 @@ namespace Farmacia_sistema
                 comboBoxprofesion.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
                 comboBoxGenero.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
                 txtedad.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
-                txtdireccion.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
-                comboBoxDistrito.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
-                txtobservacion.Text = dataGridView1.CurrentRow.Cells[12].Value.ToString();
+                txtdireccion.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
+                comboBoxDistrito.Text = dataGridView1.CurrentRow.Cells[12].Value.ToString();
+                txtobservacion.Text = dataGridView1.CurrentRow.Cells[13].Value.ToString();
 
-                var valorCelda = dataGridView1.CurrentRow.Cells[13].Value;
+                var valorCelda = dataGridView1.CurrentRow.Cells[10].Value;
 
                 if (DateTime.TryParse(valorCelda?.ToString(), out DateTime fecha))
                 {
-                    txtfecha.Text = fecha.ToString("dd/MM/yyyy");
+                    comboBoxFecha.Text = fecha.ToString("dd/MM/yyyy");
                 }
                 else
                 {
-                    txtfecha.Text = ""; // O puedes poner "Fecha inválida"
+                    comboBoxFecha.Text = ""; // O puedes poner "Fecha inválida"
                 }
             }
         }

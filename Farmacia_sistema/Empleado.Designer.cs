@@ -66,7 +66,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtfecha = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxFecha = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -108,6 +108,7 @@
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Size = new System.Drawing.Size(268, 20);
             this.txtcodigo.TabIndex = 10;
+            this.txtcodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -125,6 +126,7 @@
             this.txtobservacion.Name = "txtobservacion";
             this.txtobservacion.Size = new System.Drawing.Size(268, 20);
             this.txtobservacion.TabIndex = 12;
+            this.txtobservacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -142,6 +144,7 @@
             this.txtdni.Name = "txtdni";
             this.txtdni.Size = new System.Drawing.Size(268, 20);
             this.txtdni.TabIndex = 14;
+            this.txtdni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -159,6 +162,7 @@
             this.txtapellido.Name = "txtapellido";
             this.txtapellido.Size = new System.Drawing.Size(268, 20);
             this.txtapellido.TabIndex = 16;
+            this.txtapellido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
@@ -176,6 +180,7 @@
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(268, 20);
             this.txtnombre.TabIndex = 18;
+            this.txtnombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txttelefono
             // 
@@ -183,6 +188,7 @@
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(268, 20);
             this.txttelefono.TabIndex = 20;
+            this.txttelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label7
             // 
@@ -210,6 +216,7 @@
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(268, 20);
             this.txtcorreo.TabIndex = 22;
+            this.txtcorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
             // 
@@ -287,6 +294,7 @@
             this.txtdireccion.Name = "txtdireccion";
             this.txtdireccion.Size = new System.Drawing.Size(268, 20);
             this.txtdireccion.TabIndex = 32;
+            this.txtdireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtedad
             // 
@@ -294,6 +302,7 @@
             this.txtedad.Name = "txtedad";
             this.txtedad.Size = new System.Drawing.Size(268, 20);
             this.txtedad.TabIndex = 33;
+            this.txtedad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // comboBoxDocumento
             // 
@@ -423,12 +432,13 @@
             this.button1.Text = "NUEVO";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // txtfecha
+            // comboBoxFecha
             // 
-            this.txtfecha.Location = new System.Drawing.Point(661, 165);
-            this.txtfecha.Name = "txtfecha";
-            this.txtfecha.Size = new System.Drawing.Size(268, 20);
-            this.txtfecha.TabIndex = 44;
+            this.comboBoxFecha.FormattingEnabled = true;
+            this.comboBoxFecha.Location = new System.Drawing.Point(661, 165);
+            this.comboBoxFecha.Name = "comboBoxFecha";
+            this.comboBoxFecha.Size = new System.Drawing.Size(268, 21);
+            this.comboBoxFecha.TabIndex = 44;
             // 
             // Empleado
             // 
@@ -436,7 +446,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1050, 612);
-            this.Controls.Add(this.txtfecha);
+            this.Controls.Add(this.comboBoxFecha);
             this.Controls.Add(this.btnempleado);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -525,6 +535,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker txtfecha;
+        private System.Windows.Forms.ComboBox comboBoxFecha;
     }
 }
