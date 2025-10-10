@@ -52,7 +52,8 @@ namespace Farmacia_sistema
             {
                 MySqlConnection conexion = conexionbd.AbrirConexion();
                 //Consulta sql (asegurate de que la tabla se 'clientes' o ajustar el nombre)
-                String consulta = "SELECT a.idalmacen, a.stock, a.nombre_almacen, a.direccion_almacen, a.telefono_almacen, s.nombre_sucursal,  a.observaciones_almacen FROM almacen a LEFT JOIN sucursal s ON a.idsucursal = s.idsucursal; ";
+                String consulta = "SELECT a.idalmacen, a.stock, a.nombre_almacen, a.direccion_almacen, a.telefono_almacen, s.nombre_sucursal,  a.observaciones_almacen " +
+                    "FROM almacen a LEFT JOIN sucursal s ON a.idsucursal = s.idsucursal; ";
 
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);

@@ -98,7 +98,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(557, 93);
+            this.label5.Location = new System.Drawing.Point(557, 128);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 18);
             this.label5.TabIndex = 4;
@@ -108,7 +108,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(557, 129);
+            this.label6.Location = new System.Drawing.Point(557, 95);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 18);
             this.label6.TabIndex = 5;
@@ -154,17 +154,17 @@
             // comboBoxCliente
             // 
             this.comboBoxCliente.FormattingEnabled = true;
-            this.comboBoxCliente.Location = new System.Drawing.Point(656, 129);
+            this.comboBoxCliente.Location = new System.Drawing.Point(656, 94);
             this.comboBoxCliente.Name = "comboBoxCliente";
-            this.comboBoxCliente.Size = new System.Drawing.Size(287, 21);
+            this.comboBoxCliente.Size = new System.Drawing.Size(291, 21);
             this.comboBoxCliente.TabIndex = 12;
             // 
             // comboBoxTipoPago
             // 
             this.comboBoxTipoPago.FormattingEnabled = true;
-            this.comboBoxTipoPago.Location = new System.Drawing.Point(656, 164);
+            this.comboBoxTipoPago.Location = new System.Drawing.Point(656, 158);
             this.comboBoxTipoPago.Name = "comboBoxTipoPago";
-            this.comboBoxTipoPago.Size = new System.Drawing.Size(287, 21);
+            this.comboBoxTipoPago.Size = new System.Drawing.Size(291, 21);
             this.comboBoxTipoPago.TabIndex = 13;
             // 
             // dataGridView1
@@ -257,9 +257,9 @@
             // 
             // txttotal
             // 
-            this.txttotal.Location = new System.Drawing.Point(656, 93);
+            this.txttotal.Location = new System.Drawing.Point(656, 126);
             this.txttotal.Name = "txttotal";
-            this.txttotal.Size = new System.Drawing.Size(287, 20);
+            this.txttotal.Size = new System.Drawing.Size(291, 20);
             this.txttotal.TabIndex = 36;
             // 
             // txtfechaventa

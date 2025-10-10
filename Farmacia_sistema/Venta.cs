@@ -28,8 +28,8 @@ namespace Farmacia_sistema
 
                 //Asignamos los valores a las posiciones segun corresponda
                 txtcodigo.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                comboBoxCliente.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                comboBoxempleado.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                comboBoxCliente.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                comboBoxempleado.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                 txttotal.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
                 comboBoxTipoPago.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
 
@@ -48,8 +48,8 @@ namespace Farmacia_sistema
 
         private void Venta_Load(object sender, EventArgs e)
         {
-            this.CargarCliente();
             this.CargarEmpleado();
+            this.CargarCliente();
             this.CargarTipoPago();
         }
 
@@ -59,7 +59,8 @@ namespace Farmacia_sistema
             {
                 MySqlConnection conexion = conexionbd.AbrirConexion();
                 //Consulta sql (asegurate de que la tabla se 'clientes' o ajustar el nombre)
-                String consulta = "SELECT * FROM venta";
+                String consulta = "SELECT v.idventa, e.nombre_empleado, c.nombre_cliente, v.fecha_venta, v.total_venta, tp.metodo_pago " +
+                    "FROM venta v JOIN cliente c ON v.idcliente = c.idcliente JOIN empleado e ON v.idempleado = e.idempleado JOIN tipo_pago tp ON v.idtipo_pago = tp.idtipo_pago;";
 
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
@@ -68,7 +69,7 @@ namespace Farmacia_sistema
 
                 dataGridView1.DataSource = tabla;
 
-                //dataGridView1.Columns["codigo"].Visible = false;
+                dataGridView1.Columns["idventa"].Visible = false;
 
                 //Estilo de encabezado
                 dataGridView1.EnableHeadersVisualStyles = false;

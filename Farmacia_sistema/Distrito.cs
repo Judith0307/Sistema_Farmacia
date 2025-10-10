@@ -48,7 +48,8 @@ namespace Farmacia_sistema
             {
                 MySqlConnection conexion = conexionbd.AbrirConexion();
                 //Consulta sql (asegurate de que la tabla se 'clientes' o ajustar el nombre)
-                String consulta = "SELECT d.iddistrito, d.nombre_distrito, p.nombre_provincia FROM distrito d JOIN provincia p ON d.idprovincia = p.idprovincia;";
+                String consulta = "SELECT d.iddistrito, d.nombre_distrito, p.nombre_provincia " +
+                    "FROM distrito d JOIN provincia p ON d.idprovincia = p.idprovincia;";
 
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);

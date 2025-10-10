@@ -41,7 +41,8 @@ namespace Farmacia_sistema
             {
                 MySqlConnection conexion = conexionbd.AbrirConexion();
                 //Consulta sql (asegurate de que la tabla se 'clientes' o ajustar el nombre)
-                String consulta = "SELECT c.idcontrato, e.nombre_empleado, tc.nombre_tipo, ca.nombre_cargo, c.fecha_inicio, c.fecha_fin, c.detalles, c.observaciones_contrato, c.estado FROM contrato c JOIN empleado e ON c.idempleado = e.idempleado JOIN tipo_contrato tc ON c.idtipo_contrato = tc.idtipo_contrato JOIN cargo ca ON c.idcargo = ca.idcargo;";
+                String consulta = "SELECT c.idcontrato, e.nombre_empleado, tc.nombre_tipo, ca.nombre_cargo, c.fecha_inicio, c.fecha_fin, c.detalles, c.observaciones_contrato, c.estado " +
+                    "FROM contrato c JOIN empleado e ON c.idempleado = e.idempleado JOIN tipo_contrato tc ON c.idtipo_contrato = tc.idtipo_contrato JOIN cargo ca ON c.idcargo = ca.idcargo;";
 
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
@@ -83,7 +84,6 @@ namespace Farmacia_sistema
 
 
                 var valorCelda = dataGridView1.CurrentRow.Cells[4].Value;
-
                 if (DateTime.TryParse(valorCelda?.ToString(), out DateTime fecha))
                 {
                     comboBoxFInicio.Text = fecha.ToString("dd/MM/yyyy");
@@ -92,8 +92,8 @@ namespace Farmacia_sistema
                 {
                     comboBoxFInicio.Text = ""; // O puedes poner "Fecha inválida"
                 }
-                var valorCeldaFecha = dataGridView1.CurrentRow.Cells[5].Value;
 
+                var valorCeldaFecha = dataGridView1.CurrentRow.Cells[5].Value;
                 if (DateTime.TryParse(valorCeldaFecha?.ToString(), out DateTime fechafinal))
                 {
                     comboBoxFFinal.Text = fechafinal.ToString("dd/MM/yyyy");
