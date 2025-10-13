@@ -311,7 +311,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(18, 19);
+            this.label2.Location = new System.Drawing.Point(144, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 13);
             this.label2.TabIndex = 6;
@@ -319,9 +319,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 16);
+            this.textBox1.Location = new System.Drawing.Point(281, 16);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(429, 20);
+            this.textBox1.Size = new System.Drawing.Size(606, 20);
             this.textBox1.TabIndex = 7;
             // 
             // groupBox4
@@ -362,9 +362,9 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(303, 243);
+            this.panel1.Location = new System.Drawing.Point(21, 243);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(594, 52);
+            this.panel1.Size = new System.Drawing.Size(1118, 52);
             this.panel1.TabIndex = 9;
             // 
             // groupBox5
