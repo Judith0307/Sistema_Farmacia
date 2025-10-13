@@ -74,7 +74,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 373);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1191, 308);
+            this.dataGridView1.Size = new System.Drawing.Size(1136, 308);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -119,12 +119,12 @@
             this.groupBox2.Size = new System.Drawing.Size(327, 155);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Ventas:";
+            this.groupBox2.Text = "Reporte Ventas:";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1062, 687);
+            this.button1.Location = new System.Drawing.Point(1007, 687);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 40);
             this.button1.TabIndex = 4;
@@ -170,7 +170,7 @@
             this.groupBox4.Size = new System.Drawing.Size(236, 87);
             this.groupBox4.TabIndex = 8;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Opciones de busqueda:";
+            this.groupBox4.Text = "Reporte venta:";
             // 
             // checkBox1
             // 
@@ -357,7 +357,7 @@
             // checkBox11
             // 
             this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(15, 20);
+            this.checkBox11.Location = new System.Drawing.Point(13, 31);
             this.checkBox11.Name = "checkBox11";
             this.checkBox11.Size = new System.Drawing.Size(182, 19);
             this.checkBox11.TabIndex = 0;
@@ -367,7 +367,7 @@
             // checkBox12
             // 
             this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(15, 45);
+            this.checkBox12.Location = new System.Drawing.Point(13, 52);
             this.checkBox12.Name = "checkBox12";
             this.checkBox12.Size = new System.Drawing.Size(184, 19);
             this.checkBox12.TabIndex = 1;
@@ -384,7 +384,7 @@
             this.groupBox5.Size = new System.Drawing.Size(440, 64);
             this.groupBox5.TabIndex = 10;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Opciones de busqueda:";
+            this.groupBox5.Text = "Reporte de desempeño:";
             // 
             // checkBox13
             // 
@@ -412,7 +412,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1215, 739);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
+            this.ClientSize = new System.Drawing.Size(1160, 739);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox3);
