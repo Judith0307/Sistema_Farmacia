@@ -46,7 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
@@ -60,6 +59,7 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.checkBox14 = new System.Windows.Forms.CheckBox();
             this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -261,16 +261,6 @@
             this.checkBox5.Text = "Ventas por dia";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1007, 644);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 40);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "SALIR";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.checkBox10);
@@ -320,6 +310,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(18, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 13);
@@ -367,6 +358,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(45)))), ((int)(((byte)(50)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.textBox1);
@@ -409,6 +401,19 @@
             this.checkBox13.Text = "Empleado TOP";
             this.checkBox13.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::Farmacia_sistema.Properties.Resources.salir;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(1057, 644);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 40);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "SALIR";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Reporte_producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -424,6 +429,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Reporte_producto";
             this.Text = "Reporte_producto";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

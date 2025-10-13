@@ -153,6 +153,16 @@ namespace Farmacia_sistema.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_ventas_totales_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-ventas-totales-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -246,6 +256,16 @@ namespace Farmacia_sistema.Properties {
         internal static System.Drawing.Bitmap restaurar1 {
             get {
                 object obj = ResourceManager.GetObject("restaurar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap salir {
+            get {
+                object obj = ResourceManager.GetObject("salir", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

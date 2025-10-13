@@ -246,5 +246,17 @@ namespace Farmacia_sistema
 
             frm.Show();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Reporte_producto frm = new Reporte_producto();
+            frm.StartPosition = FormStartPosition.Manual;
+            frm.Location = new Point(
+                this.Location.X + (this.Width - frm.Width) / 2,
+                this.Location.Y + (this.Height - frm.Height) / 2
+            );
+
+            frm.Show();
+        }
     }
 }

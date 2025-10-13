@@ -332,5 +332,11 @@
   <ItemGroup>
     <None Include="Resources\Green and White Modern Medical Logo-Photoroom.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ventas-totales-24.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
