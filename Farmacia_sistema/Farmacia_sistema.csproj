@@ -173,6 +173,12 @@
     <Compile Include="Proveedor.Designer.cs">
       <DependentUpon>Proveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reporte_producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_producto.Designer.cs">
+      <DependentUpon>Reporte_producto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tipo Contrato.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,6 +242,9 @@
     </Compile>
     <EmbeddedResource Include="Proveedor.resx">
       <DependentUpon>Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_producto.resx">
+      <DependentUpon>Reporte_producto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tipo Contrato.resx">
       <DependentUpon>Tipo Contrato.cs</DependentUpon>

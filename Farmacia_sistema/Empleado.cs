@@ -26,10 +26,10 @@ namespace Farmacia_sistema
             {
                 MySqlConnection conexion = conexionbd.AbrirConexion();
                 //Consulta sql (asegurate de que la tabla se 'clientes' o ajustar el nombre)
-                String consulta = "SELECT e.idempleado, e.nombre_empleado, e.apellido_empleado, e.numero_documento, td.nombre_documento AS tipo_documento, e.telefono, e.correo, p.nombre_profesion AS profesion, " +
-                    "g.nombre_genero AS genero, e.edad_actual, e.fecha_nacimiento, e.direccion_actual, d.nombre_distrito AS distrito, e.observaciones, e.estado " +
+                String consulta = "SELECT e.idempleado, e.nombre_empleado, e.apellido_empleado, e.num_documento, td.nombre_documento AS tipo_documento, e.telefono_empleado, e.correo_empleado, p.nombre_profesion AS profesion, " +
+                    "g.nombre_genero AS genero, e.edad_actual, e.fecha_nacimiento, e.direccion_actual, d.nombre_distrito AS distrito, e.observaciones, e.estado_empleado " +
                     "FROM empleado e JOIN tipo_documento td ON e.idtipo_documento = td.idtipo_documento JOIN distrito d ON e.iddistrito = d.iddistrito JOIN profesion p ON e.idprofesion = p.idprofesion " +
-                    "JOIN genero g ON e.idgenero = g.idgenero WHERE e.estado = 1;";
+                    "JOIN genero g ON e.idgenero = g.idgenero WHERE e.estado_empleado = 1;";
 
                 MySqlCommand comando = new MySqlCommand(consulta, conexion);
                 MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
@@ -39,7 +39,7 @@ namespace Farmacia_sistema
                 dataGridView1.DataSource = tabla;
 
                 dataGridView1.Columns["idempleado"].Visible = false;
-                dataGridView1.Columns["estado"].Visible = false;
+                dataGridView1.Columns["estado_empleado"].Visible = false;
 
                 //Estilo de encabezado
                 dataGridView1.EnableHeadersVisualStyles = false;
