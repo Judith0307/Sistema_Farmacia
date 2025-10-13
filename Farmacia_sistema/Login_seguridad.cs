@@ -15,6 +15,7 @@ namespace Farmacia_sistema
         public Login_seguridad()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.BTNINGRESAR.Enabled = false;
         }
 
