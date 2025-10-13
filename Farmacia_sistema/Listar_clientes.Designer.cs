@@ -51,6 +51,7 @@
             this.dataGridView1_LISTACLIENTES.Name = "dataGridView1_LISTACLIENTES";
             this.dataGridView1_LISTACLIENTES.Size = new System.Drawing.Size(843, 405);
             this.dataGridView1_LISTACLIENTES.TabIndex = 1;
+            this.dataGridView1_LISTACLIENTES.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_LISTACLIENTES_CellContentClick);
             // 
             // button1
             // 

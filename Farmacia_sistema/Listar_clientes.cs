@@ -37,5 +37,13 @@ namespace Farmacia_sistema
 
             dataGridView1_LISTACLIENTES.DataSource = clientes;
         }
+
+        private void dataGridView1_LISTACLIENTES_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                filaSeleccionada = dataGridView1_LISTACLIENTES.Rows[e.RowIndex];
+            }
+        }
     }
 }
