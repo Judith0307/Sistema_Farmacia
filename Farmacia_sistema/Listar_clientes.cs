@@ -45,5 +45,24 @@ namespace Farmacia_sistema
                 filaSeleccionada = dataGridView1_LISTACLIENTES.Rows[e.RowIndex];
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (filaSeleccionada != null)
+            {
+                int id = Convert.ToInt32(filaSeleccionada.Cells["Id"].Value);
+                string nombre = filaSeleccionada.Cells["Nombre"].Value.ToString();
+                string email = filaSeleccionada.Cells["Email"].Value.ToString();
+
+                Form1 formulario2 = new Form1();
+                formulario2.SetClienteDatos(id, nombre, email);
+                formulario2.Show();
+                this.Close();
+            }else
+            {
+                MessageBox.Show("Por favor seleccione una fila antes de agregar.",
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
