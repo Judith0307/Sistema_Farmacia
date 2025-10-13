@@ -16,7 +16,7 @@ namespace Farmacia_sistema
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Pin_seguridad());
+            Application.Run(new Pin_seguridad ());
         }
     }
 }
