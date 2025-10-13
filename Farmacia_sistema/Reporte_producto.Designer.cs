@@ -72,9 +72,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 330);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 301);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1136, 308);
+            this.dataGridView1.Size = new System.Drawing.Size(1136, 337);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -370,7 +370,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(329, 272);
+            this.panel1.Location = new System.Drawing.Point(303, 243);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(594, 52);
             this.panel1.TabIndex = 9;
