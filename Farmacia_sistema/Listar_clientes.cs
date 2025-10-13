@@ -19,6 +19,8 @@ namespace Farmacia_sistema
             InitializeComponent();
         }
 
+        
+
         private void Listar_clientes_Load(object sender, EventArgs e)
         {
             var clientes = new[]

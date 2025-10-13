@@ -19,6 +19,12 @@ namespace Farmacia_sistema
             InitializeComponent();
         }
 
+        public void SetClienteDatos(int id, string nombre, string email)
+        {
+            txtcodigo.Text = id.ToString();
+            txtnombres.Text = nombre;
+            txtdireccion.Text = email;
+        }
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
@@ -105,6 +111,13 @@ namespace Farmacia_sistema
         private void button1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Listar_clientes a = new Listar_clientes();
+            a.Show();
         }
     }
 }
