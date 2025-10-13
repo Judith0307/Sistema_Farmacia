@@ -73,6 +73,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtfechaIngreso = new System.Windows.Forms.ComboBox();
             this.txtvencimiento = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -497,12 +498,20 @@
             this.txtvencimiento.Size = new System.Drawing.Size(236, 20);
             this.txtvencimiento.TabIndex = 56;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(497, 329);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(236, 20);
+            this.dateTimePicker1.TabIndex = 57;
+            // 
             // Producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1050, 612);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txtvencimiento);
             this.Controls.Add(this.txtfechaIngreso);
             this.Controls.Add(this.dataGridView1);
@@ -605,5 +614,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox txtfechaIngreso;
         private System.Windows.Forms.TextBox txtvencimiento;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

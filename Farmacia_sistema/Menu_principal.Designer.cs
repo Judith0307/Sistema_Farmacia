@@ -29,13 +29,26 @@
         private void InitializeComponent()
         {
             this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.btnrestaurar = new System.Windows.Forms.PictureBox();
+            this.btnminimizar = new System.Windows.Forms.PictureBox();
+            this.btnmaximizar = new System.Windows.Forms.PictureBox();
+            this.btncerrar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btninicio = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btnusuario = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnventa = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btndetalleProducto = new System.Windows.Forms.Button();
+            this.btnproveedor = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btncliente = new System.Windows.Forms.Button();
             this.panelContenido = new System.Windows.Forms.Panel();
             this.SubEmpleado = new System.Windows.Forms.Panel();
             this.btndistrito = new System.Windows.Forms.Button();
@@ -55,29 +68,18 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.btnproducto = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btninicio = new System.Windows.Forms.PictureBox();
-            this.btnusuario = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btnventa = new System.Windows.Forms.Button();
-            this.btndetalleProducto = new System.Windows.Forms.Button();
-            this.btnproveedor = new System.Windows.Forms.Button();
-            this.btncliente = new System.Windows.Forms.Button();
-            this.btnrestaurar = new System.Windows.Forms.PictureBox();
-            this.btnminimizar = new System.Windows.Forms.PictureBox();
-            this.btnmaximizar = new System.Windows.Forms.PictureBox();
-            this.btncerrar = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BarraTitulo.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panelContenido.SuspendLayout();
-            this.SubEmpleado.SuspendLayout();
-            this.SubProducto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btninicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnrestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnmaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btninicio)).BeginInit();
+            this.panelContenido.SuspendLayout();
+            this.SubEmpleado.SuspendLayout();
+            this.SubProducto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BarraTitulo
@@ -92,6 +94,59 @@
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(1300, 38);
             this.BarraTitulo.TabIndex = 0;
+            // 
+            // btnrestaurar
+            // 
+            this.btnrestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnrestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrestaurar.Image = global::Farmacia_sistema.Properties.Resources.restaurar;
+            this.btnrestaurar.Location = new System.Drawing.Point(1232, 7);
+            this.btnrestaurar.Name = "btnrestaurar";
+            this.btnrestaurar.Size = new System.Drawing.Size(25, 25);
+            this.btnrestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnrestaurar.TabIndex = 3;
+            this.btnrestaurar.TabStop = false;
+            this.btnrestaurar.Visible = false;
+            this.btnrestaurar.Click += new System.EventHandler(this.btnrestaurar_Click);
+            // 
+            // btnminimizar
+            // 
+            this.btnminimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnminimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnminimizar.Image = global::Farmacia_sistema.Properties.Resources.minimiza;
+            this.btnminimizar.Location = new System.Drawing.Point(1201, 7);
+            this.btnminimizar.Name = "btnminimizar";
+            this.btnminimizar.Size = new System.Drawing.Size(25, 25);
+            this.btnminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnminimizar.TabIndex = 2;
+            this.btnminimizar.TabStop = false;
+            this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
+            // 
+            // btnmaximizar
+            // 
+            this.btnmaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnmaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnmaximizar.Image = global::Farmacia_sistema.Properties.Resources.maximiza;
+            this.btnmaximizar.Location = new System.Drawing.Point(1232, 7);
+            this.btnmaximizar.Name = "btnmaximizar";
+            this.btnmaximizar.Size = new System.Drawing.Size(25, 25);
+            this.btnmaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnmaximizar.TabIndex = 1;
+            this.btnmaximizar.TabStop = false;
+            this.btnmaximizar.Click += new System.EventHandler(this.btnmaximizar_Click);
+            // 
+            // btncerrar
+            // 
+            this.btncerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncerrar.Image = global::Farmacia_sistema.Properties.Resources.X;
+            this.btncerrar.Location = new System.Drawing.Point(1263, 7);
+            this.btncerrar.Name = "btncerrar";
+            this.btncerrar.Size = new System.Drawing.Size(25, 25);
+            this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btncerrar.TabIndex = 0;
+            this.btncerrar.TabStop = false;
+            this.btncerrar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
@@ -117,6 +172,42 @@
             this.panel2.Size = new System.Drawing.Size(250, 612);
             this.panel2.TabIndex = 1;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
+            this.panel1.Location = new System.Drawing.Point(3, 479);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(5, 35);
+            this.panel1.TabIndex = 19;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::Farmacia_sistema.Properties.Resources.icons8_ventas_totales_24;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(6, 479);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(244, 35);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Reporte Producto";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // btninicio
+            // 
+            this.btninicio.Image = global::Farmacia_sistema.Properties.Resources.Green_and_White_Modern_Medical_Logo_Photoroom;
+            this.btninicio.Location = new System.Drawing.Point(6, 3);
+            this.btninicio.Name = "btninicio";
+            this.btninicio.Size = new System.Drawing.Size(241, 265);
+            this.btninicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btninicio.TabIndex = 18;
+            this.btninicio.TabStop = false;
+            this.btninicio.Click += new System.EventHandler(this.btninicio_Click);
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
@@ -124,6 +215,23 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(5, 35);
             this.panel8.TabIndex = 7;
+            // 
+            // btnusuario
+            // 
+            this.btnusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
+            this.btnusuario.FlatAppearance.BorderSize = 0;
+            this.btnusuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
+            this.btnusuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnusuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnusuario.Image = global::Farmacia_sistema.Properties.Resources.usuario;
+            this.btnusuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnusuario.Location = new System.Drawing.Point(6, 520);
+            this.btnusuario.Name = "btnusuario";
+            this.btnusuario.Size = new System.Drawing.Size(244, 35);
+            this.btnusuario.TabIndex = 8;
+            this.btnusuario.Text = "Usuario";
+            this.btnusuario.UseVisualStyleBackColor = false;
+            this.btnusuario.Click += new System.EventHandler(this.btnusuario_Click);
             // 
             // panel7
             // 
@@ -133,6 +241,23 @@
             this.panel7.Size = new System.Drawing.Size(5, 35);
             this.panel7.TabIndex = 5;
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Image = global::Farmacia_sistema.Properties.Resources.empleado__2_;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(6, 438);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(244, 35);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Detalle empleado";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
@@ -140,6 +265,23 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(5, 35);
             this.panel6.TabIndex = 3;
+            // 
+            // btnventa
+            // 
+            this.btnventa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
+            this.btnventa.FlatAppearance.BorderSize = 0;
+            this.btnventa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
+            this.btnventa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnventa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnventa.Image = global::Farmacia_sistema.Properties.Resources.dinero;
+            this.btnventa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnventa.Location = new System.Drawing.Point(6, 356);
+            this.btnventa.Name = "btnventa";
+            this.btnventa.Size = new System.Drawing.Size(244, 35);
+            this.btnventa.TabIndex = 4;
+            this.btnventa.Text = "Venta";
+            this.btnventa.UseVisualStyleBackColor = false;
+            this.btnventa.Click += new System.EventHandler(this.btnventa_Click);
             // 
             // panel5
             // 
@@ -157,6 +299,40 @@
             this.panel4.Size = new System.Drawing.Size(5, 35);
             this.panel4.TabIndex = 1;
             // 
+            // btndetalleProducto
+            // 
+            this.btndetalleProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
+            this.btndetalleProducto.FlatAppearance.BorderSize = 0;
+            this.btndetalleProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
+            this.btndetalleProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndetalleProducto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndetalleProducto.Image = global::Farmacia_sistema.Properties.Resources.carrito_venta;
+            this.btndetalleProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndetalleProducto.Location = new System.Drawing.Point(6, 315);
+            this.btndetalleProducto.Name = "btndetalleProducto";
+            this.btndetalleProducto.Size = new System.Drawing.Size(244, 35);
+            this.btndetalleProducto.TabIndex = 2;
+            this.btndetalleProducto.Text = "Detalle producto";
+            this.btndetalleProducto.UseVisualStyleBackColor = false;
+            this.btndetalleProducto.Click += new System.EventHandler(this.btndetalleProducto_Click);
+            // 
+            // btnproveedor
+            // 
+            this.btnproveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
+            this.btnproveedor.FlatAppearance.BorderSize = 0;
+            this.btnproveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
+            this.btnproveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnproveedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnproveedor.Image = global::Farmacia_sistema.Properties.Resources.proveedor;
+            this.btnproveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnproveedor.Location = new System.Drawing.Point(6, 397);
+            this.btnproveedor.Name = "btnproveedor";
+            this.btnproveedor.Size = new System.Drawing.Size(244, 35);
+            this.btnproveedor.TabIndex = 2;
+            this.btnproveedor.Text = "Proveedor";
+            this.btnproveedor.UseVisualStyleBackColor = false;
+            this.btnproveedor.Click += new System.EventHandler(this.btnproveedor_Click);
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
@@ -165,9 +341,27 @@
             this.panel3.Size = new System.Drawing.Size(5, 35);
             this.panel3.TabIndex = 0;
             // 
+            // btncliente
+            // 
+            this.btncliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
+            this.btncliente.FlatAppearance.BorderSize = 0;
+            this.btncliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
+            this.btncliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncliente.Image = global::Farmacia_sistema.Properties.Resources.cliente1;
+            this.btncliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncliente.Location = new System.Drawing.Point(6, 274);
+            this.btncliente.Name = "btncliente";
+            this.btncliente.Size = new System.Drawing.Size(244, 35);
+            this.btncliente.TabIndex = 0;
+            this.btncliente.Text = "Cliente";
+            this.btncliente.UseVisualStyleBackColor = false;
+            this.btncliente.Click += new System.EventHandler(this.btncliente_Click);
+            // 
             // panelContenido
             // 
             this.panelContenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
+            this.panelContenido.Controls.Add(this.pictureBox1);
             this.panelContenido.Controls.Add(this.SubEmpleado);
             this.panelContenido.Controls.Add(this.SubProducto);
             this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -393,196 +587,15 @@
             this.panel10.Size = new System.Drawing.Size(5, 28);
             this.panel10.TabIndex = 9;
             // 
-            // panel1
+            // pictureBox1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
-            this.panel1.Location = new System.Drawing.Point(3, 479);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 35);
-            this.panel1.TabIndex = 19;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::Farmacia_sistema.Properties.Resources.icons8_ventas_totales_24;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(6, 479);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(244, 35);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Reporte Producto";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // btninicio
-            // 
-            this.btninicio.Image = global::Farmacia_sistema.Properties.Resources.Green_and_White_Modern_Medical_Logo_Photoroom;
-            this.btninicio.Location = new System.Drawing.Point(6, 3);
-            this.btninicio.Name = "btninicio";
-            this.btninicio.Size = new System.Drawing.Size(241, 265);
-            this.btninicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btninicio.TabIndex = 18;
-            this.btninicio.TabStop = false;
-            this.btninicio.Click += new System.EventHandler(this.btninicio_Click);
-            // 
-            // btnusuario
-            // 
-            this.btnusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
-            this.btnusuario.FlatAppearance.BorderSize = 0;
-            this.btnusuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
-            this.btnusuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnusuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnusuario.Image = global::Farmacia_sistema.Properties.Resources.usuario;
-            this.btnusuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnusuario.Location = new System.Drawing.Point(6, 520);
-            this.btnusuario.Name = "btnusuario";
-            this.btnusuario.Size = new System.Drawing.Size(244, 35);
-            this.btnusuario.TabIndex = 8;
-            this.btnusuario.Text = "Usuario";
-            this.btnusuario.UseVisualStyleBackColor = false;
-            this.btnusuario.Click += new System.EventHandler(this.btnusuario_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = global::Farmacia_sistema.Properties.Resources.empleado__2_;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(6, 438);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(244, 35);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Detalle empleado";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // btnventa
-            // 
-            this.btnventa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
-            this.btnventa.FlatAppearance.BorderSize = 0;
-            this.btnventa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
-            this.btnventa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnventa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnventa.Image = global::Farmacia_sistema.Properties.Resources.dinero;
-            this.btnventa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnventa.Location = new System.Drawing.Point(6, 356);
-            this.btnventa.Name = "btnventa";
-            this.btnventa.Size = new System.Drawing.Size(244, 35);
-            this.btnventa.TabIndex = 4;
-            this.btnventa.Text = "Venta";
-            this.btnventa.UseVisualStyleBackColor = false;
-            this.btnventa.Click += new System.EventHandler(this.btnventa_Click);
-            // 
-            // btndetalleProducto
-            // 
-            this.btndetalleProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
-            this.btndetalleProducto.FlatAppearance.BorderSize = 0;
-            this.btndetalleProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
-            this.btndetalleProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndetalleProducto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndetalleProducto.Image = global::Farmacia_sistema.Properties.Resources.carrito_venta;
-            this.btndetalleProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btndetalleProducto.Location = new System.Drawing.Point(6, 315);
-            this.btndetalleProducto.Name = "btndetalleProducto";
-            this.btndetalleProducto.Size = new System.Drawing.Size(244, 35);
-            this.btndetalleProducto.TabIndex = 2;
-            this.btndetalleProducto.Text = "Detalle producto";
-            this.btndetalleProducto.UseVisualStyleBackColor = false;
-            this.btndetalleProducto.Click += new System.EventHandler(this.btndetalleProducto_Click);
-            // 
-            // btnproveedor
-            // 
-            this.btnproveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
-            this.btnproveedor.FlatAppearance.BorderSize = 0;
-            this.btnproveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
-            this.btnproveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnproveedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnproveedor.Image = global::Farmacia_sistema.Properties.Resources.proveedor;
-            this.btnproveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnproveedor.Location = new System.Drawing.Point(6, 397);
-            this.btnproveedor.Name = "btnproveedor";
-            this.btnproveedor.Size = new System.Drawing.Size(244, 35);
-            this.btnproveedor.TabIndex = 2;
-            this.btnproveedor.Text = "Proveedor";
-            this.btnproveedor.UseVisualStyleBackColor = false;
-            this.btnproveedor.Click += new System.EventHandler(this.btnproveedor_Click);
-            // 
-            // btncliente
-            // 
-            this.btncliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(171)))), ((int)(((byte)(149)))));
-            this.btncliente.FlatAppearance.BorderSize = 0;
-            this.btncliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(203)))), ((int)(((byte)(110)))));
-            this.btncliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncliente.Image = global::Farmacia_sistema.Properties.Resources.cliente1;
-            this.btncliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncliente.Location = new System.Drawing.Point(6, 274);
-            this.btncliente.Name = "btncliente";
-            this.btncliente.Size = new System.Drawing.Size(244, 35);
-            this.btncliente.TabIndex = 0;
-            this.btncliente.Text = "Cliente";
-            this.btncliente.UseVisualStyleBackColor = false;
-            this.btncliente.Click += new System.EventHandler(this.btncliente_Click);
-            // 
-            // btnrestaurar
-            // 
-            this.btnrestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnrestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnrestaurar.Image = global::Farmacia_sistema.Properties.Resources.restaurar;
-            this.btnrestaurar.Location = new System.Drawing.Point(1232, 7);
-            this.btnrestaurar.Name = "btnrestaurar";
-            this.btnrestaurar.Size = new System.Drawing.Size(25, 25);
-            this.btnrestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnrestaurar.TabIndex = 3;
-            this.btnrestaurar.TabStop = false;
-            this.btnrestaurar.Visible = false;
-            this.btnrestaurar.Click += new System.EventHandler(this.btnrestaurar_Click);
-            // 
-            // btnminimizar
-            // 
-            this.btnminimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnminimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnminimizar.Image = global::Farmacia_sistema.Properties.Resources.minimiza;
-            this.btnminimizar.Location = new System.Drawing.Point(1201, 7);
-            this.btnminimizar.Name = "btnminimizar";
-            this.btnminimizar.Size = new System.Drawing.Size(25, 25);
-            this.btnminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnminimizar.TabIndex = 2;
-            this.btnminimizar.TabStop = false;
-            this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
-            // 
-            // btnmaximizar
-            // 
-            this.btnmaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnmaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnmaximizar.Image = global::Farmacia_sistema.Properties.Resources.maximiza;
-            this.btnmaximizar.Location = new System.Drawing.Point(1232, 7);
-            this.btnmaximizar.Name = "btnmaximizar";
-            this.btnmaximizar.Size = new System.Drawing.Size(25, 25);
-            this.btnmaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnmaximizar.TabIndex = 1;
-            this.btnmaximizar.TabStop = false;
-            this.btnmaximizar.Click += new System.EventHandler(this.btnmaximizar_Click);
-            // 
-            // btncerrar
-            // 
-            this.btncerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncerrar.Image = global::Farmacia_sistema.Properties.Resources.X;
-            this.btncerrar.Location = new System.Drawing.Point(1263, 7);
-            this.btncerrar.Name = "btncerrar";
-            this.btncerrar.Size = new System.Drawing.Size(25, 25);
-            this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btncerrar.TabIndex = 0;
-            this.btncerrar.TabStop = false;
-            this.btncerrar.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Image = global::Farmacia_sistema.Properties.Resources.Green_and_White_Modern_Medical_Logo_Photoroom;
+            this.pictureBox1.Location = new System.Drawing.Point(303, 133);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(664, 476);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
             // 
             // Menu_principal
             // 
@@ -599,15 +612,16 @@
             this.Load += new System.EventHandler(this.Menu_principal_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Menu_principal_MouseDown);
             this.BarraTitulo.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panelContenido.ResumeLayout(false);
-            this.SubEmpleado.ResumeLayout(false);
-            this.SubProducto.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btninicio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnrestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnmaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btninicio)).EndInit();
+            this.panelContenido.ResumeLayout(false);
+            this.SubEmpleado.ResumeLayout(false);
+            this.SubProducto.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -654,5 +668,6 @@
         private System.Windows.Forms.PictureBox btninicio;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
