@@ -45,7 +45,7 @@ namespace Farmacia_sistema
 
                 dataGridView1.DataSource = tabla;
 
-                //dataGridView1.Columns["codigo"].Visible = false;
+                dataGridView1.Columns["idlaboratorio"].Visible = false;
 
                 //Estilo de encabezado
                 dataGridView1.EnableHeadersVisualStyles = false;

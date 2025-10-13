@@ -104,6 +104,7 @@
             // 
             // txtcodigo
             // 
+            this.txtcodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtcodigo.Location = new System.Drawing.Point(179, 84);
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Size = new System.Drawing.Size(268, 20);
