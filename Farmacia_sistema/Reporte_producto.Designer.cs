@@ -401,11 +401,11 @@
             // 
             this.checkBox14.AutoSize = true;
             this.checkBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox14.Location = new System.Drawing.Point(283, 29);
+            this.checkBox14.Location = new System.Drawing.Point(219, 29);
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(118, 17);
+            this.checkBox14.Size = new System.Drawing.Size(186, 17);
             this.checkBox14.TabIndex = 1;
-            this.checkBox14.Text = "Buscar Sucursal";
+            this.checkBox14.Text = "Empleado con menor ventas";
             this.checkBox14.UseVisualStyleBackColor = true;
             // 
             // Reporte_producto
