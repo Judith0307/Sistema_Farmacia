@@ -72,6 +72,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Listar_clientes";
             this.Text = "Listar_clientes";
+            this.Load += new System.EventHandler(this.Listar_clientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_LISTACLIENTES)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
