@@ -29,9 +29,9 @@ namespace Farmacia_sistema
                 //Asignamos los valores a las posiciones segun corresponda
                 txtcodigo.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 comboBoxCliente.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                comboBoxempleado.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                txttotal.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
                 comboBoxTipoPago.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                txttotal.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                comboBoxempleado.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
 
                 var valorCelda = dataGridView1.CurrentRow.Cells[3].Value;
 
@@ -122,10 +122,10 @@ namespace Farmacia_sistema
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                comboBoxempleado.DataSource = dt;             // Asigna los datos al ComboBox
-                comboBoxempleado.DisplayMember = "nombre_cliente"; // Lo que se mostrará
-                comboBoxempleado.ValueMember = "idcliente";       // El valor interno (oculto)
-                comboBoxempleado.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
+                comboBoxCliente.DataSource = dt;             // Asigna los datos al ComboBox
+                comboBoxCliente.DisplayMember = "nombre_cliente"; // Lo que se mostrará
+                comboBoxCliente.ValueMember = "idcliente";       // El valor interno (oculto)
+                comboBoxCliente.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
 
                 conexionBD.CerrarConexion();
             }
@@ -147,10 +147,10 @@ namespace Farmacia_sistema
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                comboBoxempleado.DataSource = dt;             // Asigna los datos al ComboBox
-                comboBoxempleado.DisplayMember = "metodo_pago"; // Lo que se mostrará
-                comboBoxempleado.ValueMember = "idtipo_pago";       // El valor interno (oculto)
-                comboBoxempleado.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
+                comboBoxTipoPago.DataSource = dt;             // Asigna los datos al ComboBox
+                comboBoxTipoPago.DisplayMember = "metodo_pago"; // Lo que se mostrará
+                comboBoxTipoPago.ValueMember = "idtipo_pago";       // El valor interno (oculto)
+                comboBoxTipoPago.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
 
                 conexionBD.CerrarConexion();
             }

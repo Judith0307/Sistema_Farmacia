@@ -161,10 +161,10 @@ namespace Farmacia_sistema
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                comboBoxDocumento.DataSource = dt;             // Asigna los datos al ComboBox
-                comboBoxDocumento.DisplayMember = "nombre_genero"; // Lo que se mostrará
-                comboBoxDocumento.ValueMember = "idgenero";       // El valor interno (oculto)
-                comboBoxDocumento.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
+                comboBoxGenero.DataSource = dt;             // Asigna los datos al ComboBox
+                comboBoxGenero.DisplayMember = "nombre_genero"; // Lo que se mostrará
+                comboBoxGenero.ValueMember = "idgenero";       // El valor interno (oculto)
+                comboBoxGenero.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
 
                 conexionBD.CerrarConexion();
             }
@@ -186,10 +186,10 @@ namespace Farmacia_sistema
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                comboBoxDocumento.DataSource = dt;             // Asigna los datos al ComboBox
-                comboBoxDocumento.DisplayMember = "nombre_distrito"; // Lo que se mostrará
-                comboBoxDocumento.ValueMember = "iddistrito";       // El valor interno (oculto)
-                comboBoxDocumento.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
+                comboBoxDistrito.DataSource = dt;             // Asigna los datos al ComboBox
+                comboBoxDistrito.DisplayMember = "nombre_distrito"; // Lo que se mostrará
+                comboBoxDistrito.ValueMember = "iddistrito";       // El valor interno (oculto)
+                comboBoxDistrito.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
 
                 conexionBD.CerrarConexion();
             }

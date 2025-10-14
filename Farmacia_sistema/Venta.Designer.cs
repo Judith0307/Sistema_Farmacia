@@ -37,9 +37,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtcodigo = new System.Windows.Forms.TextBox();
-            this.comboBoxempleado = new System.Windows.Forms.ComboBox();
-            this.comboBoxCliente = new System.Windows.Forms.ComboBox();
             this.comboBoxTipoPago = new System.Windows.Forms.ComboBox();
+            this.comboBoxCliente = new System.Windows.Forms.ComboBox();
+            this.comboBoxempleado = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -143,13 +143,13 @@
             this.txtcodigo.TabIndex = 8;
             this.txtcodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // comboBoxempleado
+            // comboBoxTipoPago
             // 
-            this.comboBoxempleado.FormattingEnabled = true;
-            this.comboBoxempleado.Location = new System.Drawing.Point(147, 125);
-            this.comboBoxempleado.Name = "comboBoxempleado";
-            this.comboBoxempleado.Size = new System.Drawing.Size(291, 21);
-            this.comboBoxempleado.TabIndex = 11;
+            this.comboBoxTipoPago.FormattingEnabled = true;
+            this.comboBoxTipoPago.Location = new System.Drawing.Point(656, 158);
+            this.comboBoxTipoPago.Name = "comboBoxTipoPago";
+            this.comboBoxTipoPago.Size = new System.Drawing.Size(291, 21);
+            this.comboBoxTipoPago.TabIndex = 11;
             // 
             // comboBoxCliente
             // 
@@ -159,13 +159,13 @@
             this.comboBoxCliente.Size = new System.Drawing.Size(291, 21);
             this.comboBoxCliente.TabIndex = 12;
             // 
-            // comboBoxTipoPago
+            // comboBoxempleado
             // 
-            this.comboBoxTipoPago.FormattingEnabled = true;
-            this.comboBoxTipoPago.Location = new System.Drawing.Point(656, 158);
-            this.comboBoxTipoPago.Name = "comboBoxTipoPago";
-            this.comboBoxTipoPago.Size = new System.Drawing.Size(291, 21);
-            this.comboBoxTipoPago.TabIndex = 13;
+            this.comboBoxempleado.FormattingEnabled = true;
+            this.comboBoxempleado.Location = new System.Drawing.Point(147, 125);
+            this.comboBoxempleado.Name = "comboBoxempleado";
+            this.comboBoxempleado.Size = new System.Drawing.Size(291, 21);
+            this.comboBoxempleado.TabIndex = 13;
             // 
             // dataGridView1
             // 
@@ -283,9 +283,9 @@
             this.Controls.Add(this.btnventas);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBoxTipoPago);
-            this.Controls.Add(this.comboBoxCliente);
             this.Controls.Add(this.comboBoxempleado);
+            this.Controls.Add(this.comboBoxCliente);
+            this.Controls.Add(this.comboBoxTipoPago);
             this.Controls.Add(this.txtcodigo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -318,9 +318,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtcodigo;
-        private System.Windows.Forms.ComboBox comboBoxempleado;
-        private System.Windows.Forms.ComboBox comboBoxCliente;
         private System.Windows.Forms.ComboBox comboBoxTipoPago;
+        private System.Windows.Forms.ComboBox comboBoxCliente;
+        private System.Windows.Forms.ComboBox comboBoxempleado;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox2;

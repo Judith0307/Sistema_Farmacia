@@ -93,10 +93,10 @@ namespace Farmacia_sistema
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                comboBoxproveedor.DataSource = dt;             // Asigna los datos al ComboBox
-                comboBoxproveedor.DisplayMember = "nombre_categoria"; // Lo que se mostrará
-                comboBoxproveedor.ValueMember = "idcategoria";       // El valor interno (oculto)
-                comboBoxproveedor.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
+                comboBoxcategoria.DataSource = dt;             // Asigna los datos al ComboBox
+                comboBoxcategoria.DisplayMember = "nombre_categoria"; // Lo que se mostrará
+                comboBoxcategoria.ValueMember = "idcategoria";       // El valor interno (oculto)
+                comboBoxcategoria.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
 
                 conexionBD.CerrarConexion();
             }
@@ -119,10 +119,10 @@ namespace Farmacia_sistema
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                comboBoxproveedor.DataSource = dt;             // Asigna los datos al ComboBox
-                comboBoxproveedor.DisplayMember = "nombre_marca"; // Lo que se mostrará
-                comboBoxproveedor.ValueMember = "idmarca";       // El valor interno (oculto)
-                comboBoxproveedor.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
+                comboBoxmarca.DataSource = dt;             // Asigna los datos al ComboBox
+                comboBoxmarca.DisplayMember = "nombre_marca"; // Lo que se mostrará
+                comboBoxmarca.ValueMember = "idmarca";       // El valor interno (oculto)
+                comboBoxmarca.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
 
                 conexionBD.CerrarConexion();
             }
@@ -144,10 +144,10 @@ namespace Farmacia_sistema
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                comboBoxproveedor.DataSource = dt;             // Asigna los datos al ComboBox
-                comboBoxproveedor.DisplayMember = "nombre_modelo"; // Lo que se mostrará
-                comboBoxproveedor.ValueMember = "idmodelo";       // El valor interno (oculto)
-                comboBoxproveedor.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
+                comboBoxmodelo.DataSource = dt;             // Asigna los datos al ComboBox
+                comboBoxmodelo.DisplayMember = "nombre_modelo"; // Lo que se mostrará
+                comboBoxmodelo.ValueMember = "idmodelo";       // El valor interno (oculto)
+                comboBoxmodelo.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
 
                 conexionBD.CerrarConexion();
             }
@@ -170,10 +170,10 @@ namespace Farmacia_sistema
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                comboBoxproveedor.DataSource = dt;             // Asigna los datos al ComboBox
-                comboBoxproveedor.DisplayMember = "nombre_unidad"; // Lo que se mostrará
-                comboBoxproveedor.ValueMember = "idunidad_medidad";       // El valor interno (oculto)
-                comboBoxproveedor.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
+                comboBoxunidadmedida.DataSource = dt;             // Asigna los datos al ComboBox
+                comboBoxunidadmedida.DisplayMember = "nombre_unidad"; // Lo que se mostrará
+                comboBoxunidadmedida.ValueMember = "idunidad_medidad";       // El valor interno (oculto)
+                comboBoxunidadmedida.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
 
                 conexionBD.CerrarConexion();
             }
@@ -195,10 +195,10 @@ namespace Farmacia_sistema
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                comboBoxproveedor.DataSource = dt;             // Asigna los datos al ComboBox
-                comboBoxproveedor.DisplayMember = "nombre_laboratorio"; // Lo que se mostrará
-                comboBoxproveedor.ValueMember = "idlaboratorio";       // El valor interno (oculto)
-                comboBoxproveedor.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
+                comboBoxlaboratorio.DataSource = dt;             // Asigna los datos al ComboBox
+                comboBoxlaboratorio.DisplayMember = "nombre_laboratorio"; // Lo que se mostrará
+                comboBoxlaboratorio.ValueMember = "idlaboratorio";       // El valor interno (oculto)
+                comboBoxlaboratorio.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
 
                 conexionBD.CerrarConexion();
             }
@@ -220,10 +220,10 @@ namespace Farmacia_sistema
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                comboBoxproveedor.DataSource = dt;             // Asigna los datos al ComboBox
-                comboBoxproveedor.DisplayMember = "nombre_prdct"; // Lo que se mostrará
-                comboBoxproveedor.ValueMember = "idlote";       // El valor interno (oculto)
-                comboBoxproveedor.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
+                comboBoxlote.DataSource = dt;             // Asigna los datos al ComboBox
+                comboBoxlote.DisplayMember = "nombre_prdct"; // Lo que se mostrará
+                comboBoxlote.ValueMember = "idlote";       // El valor interno (oculto)
+                comboBoxlote.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
 
                 conexionBD.CerrarConexion();
             }
@@ -245,10 +245,10 @@ namespace Farmacia_sistema
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                comboBoxproveedor.DataSource = dt;             // Asigna los datos al ComboBox
-                comboBoxproveedor.DisplayMember = "nombre_almacen"; // Lo que se mostrará
-                comboBoxproveedor.ValueMember = "idalmacen";       // El valor interno (oculto)
-                comboBoxproveedor.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
+                comboBoxalmacen.DataSource = dt;             // Asigna los datos al ComboBox
+                comboBoxalmacen.DisplayMember = "nombre_almacen"; // Lo que se mostrará
+                comboBoxalmacen.ValueMember = "idalmacen";       // El valor interno (oculto)
+                comboBoxalmacen.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
 
                 conexionBD.CerrarConexion();
             }
