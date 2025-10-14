@@ -316,5 +316,10 @@ namespace Farmacia_sistema
                 txtvencimiento.Text = ""; // O puedes poner "Fecha inválida"
             }
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

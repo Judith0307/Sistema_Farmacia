@@ -49,7 +49,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.txttotal = new System.Windows.Forms.TextBox();
-            this.txtfechaventa = new System.Windows.Forms.TextBox();
+            this.txtfechaventa = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -146,7 +146,7 @@
             // comboBoxempleado
             // 
             this.comboBoxempleado.FormattingEnabled = true;
-            this.comboBoxempleado.Location = new System.Drawing.Point(147, 129);
+            this.comboBoxempleado.Location = new System.Drawing.Point(147, 125);
             this.comboBoxempleado.Name = "comboBoxempleado";
             this.comboBoxempleado.Size = new System.Drawing.Size(291, 21);
             this.comboBoxempleado.TabIndex = 11;
@@ -264,10 +264,10 @@
             // 
             // txtfechaventa
             // 
-            this.txtfechaventa.Location = new System.Drawing.Point(147, 165);
+            this.txtfechaventa.Location = new System.Drawing.Point(147, 159);
             this.txtfechaventa.Name = "txtfechaventa";
             this.txtfechaventa.Size = new System.Drawing.Size(291, 20);
-            this.txtfechaventa.TabIndex = 37;
+            this.txtfechaventa.TabIndex = 38;
             // 
             // Venta
             // 
@@ -330,6 +330,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox txttotal;
-        private System.Windows.Forms.TextBox txtfechaventa;
+        private System.Windows.Forms.DateTimePicker txtfechaventa;
     }
 }

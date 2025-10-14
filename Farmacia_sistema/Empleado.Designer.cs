@@ -66,7 +66,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBoxFecha = new System.Windows.Forms.ComboBox();
+            this.comboBoxFecha = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -435,11 +435,10 @@
             // 
             // comboBoxFecha
             // 
-            this.comboBoxFecha.FormattingEnabled = true;
             this.comboBoxFecha.Location = new System.Drawing.Point(661, 165);
             this.comboBoxFecha.Name = "comboBoxFecha";
-            this.comboBoxFecha.Size = new System.Drawing.Size(268, 21);
-            this.comboBoxFecha.TabIndex = 44;
+            this.comboBoxFecha.Size = new System.Drawing.Size(268, 20);
+            this.comboBoxFecha.TabIndex = 45;
             // 
             // Empleado
             // 
@@ -536,6 +535,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBoxFecha;
+        private System.Windows.Forms.DateTimePicker comboBoxFecha;
     }
 }

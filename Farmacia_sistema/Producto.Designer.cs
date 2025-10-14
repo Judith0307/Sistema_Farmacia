@@ -71,9 +71,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtfechaIngreso = new System.Windows.Forms.ComboBox();
-            this.txtvencimiento = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtvencimiento = new System.Windows.Forms.DateTimePicker();
+            this.txtfechaIngreso = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -131,7 +130,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(492, 130);
+            this.label4.Location = new System.Drawing.Point(492, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 18);
             this.label4.TabIndex = 13;
@@ -483,27 +482,20 @@
             this.dataGridView1.TabIndex = 53;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // txtfechaIngreso
-            // 
-            this.txtfechaIngreso.FormattingEnabled = true;
-            this.txtfechaIngreso.Location = new System.Drawing.Point(199, 283);
-            this.txtfechaIngreso.Name = "txtfechaIngreso";
-            this.txtfechaIngreso.Size = new System.Drawing.Size(236, 21);
-            this.txtfechaIngreso.TabIndex = 55;
-            // 
             // txtvencimiento
             // 
-            this.txtvencimiento.Location = new System.Drawing.Point(199, 256);
+            this.txtvencimiento.Location = new System.Drawing.Point(199, 254);
             this.txtvencimiento.Name = "txtvencimiento";
             this.txtvencimiento.Size = new System.Drawing.Size(236, 20);
-            this.txtvencimiento.TabIndex = 56;
+            this.txtvencimiento.TabIndex = 57;
             // 
-            // dateTimePicker1
+            // txtfechaIngreso
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(497, 329);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(236, 20);
-            this.dateTimePicker1.TabIndex = 57;
+            this.txtfechaIngreso.Location = new System.Drawing.Point(199, 282);
+            this.txtfechaIngreso.Name = "txtfechaIngreso";
+            this.txtfechaIngreso.Size = new System.Drawing.Size(236, 20);
+            this.txtfechaIngreso.TabIndex = 58;
+            this.txtfechaIngreso.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // Producto
             // 
@@ -511,9 +503,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1050, 612);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.txtvencimiento);
             this.Controls.Add(this.txtfechaIngreso);
+            this.Controls.Add(this.txtvencimiento);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnproductos);
             this.Controls.Add(this.button3);
@@ -612,8 +603,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox txtfechaIngreso;
-        private System.Windows.Forms.TextBox txtvencimiento;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker txtvencimiento;
+        private System.Windows.Forms.DateTimePicker txtfechaIngreso;
     }
 }

@@ -44,8 +44,6 @@
             this.comboBoxTContrato = new System.Windows.Forms.ComboBox();
             this.comboBoxCargo = new System.Windows.Forms.ComboBox();
             this.comboBoxEmpleado = new System.Windows.Forms.ComboBox();
-            this.comboBoxFInicio = new System.Windows.Forms.ComboBox();
-            this.comboBoxFFinal = new System.Windows.Forms.ComboBox();
             this.btncontrato = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -54,6 +52,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.comboBoxFFinal = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxFInicio = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -208,22 +208,6 @@
             this.comboBoxEmpleado.Size = new System.Drawing.Size(288, 21);
             this.comboBoxEmpleado.TabIndex = 16;
             // 
-            // comboBoxFInicio
-            // 
-            this.comboBoxFInicio.FormattingEnabled = true;
-            this.comboBoxFInicio.Location = new System.Drawing.Point(121, 151);
-            this.comboBoxFInicio.Name = "comboBoxFInicio";
-            this.comboBoxFInicio.Size = new System.Drawing.Size(288, 21);
-            this.comboBoxFInicio.TabIndex = 17;
-            // 
-            // comboBoxFFinal
-            // 
-            this.comboBoxFFinal.FormattingEnabled = true;
-            this.comboBoxFFinal.Location = new System.Drawing.Point(121, 181);
-            this.comboBoxFFinal.Name = "comboBoxFFinal";
-            this.comboBoxFFinal.Size = new System.Drawing.Size(288, 21);
-            this.comboBoxFFinal.TabIndex = 18;
-            // 
             // btncontrato
             // 
             this.btncontrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -312,20 +296,34 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // comboBoxFFinal
+            // 
+            this.comboBoxFFinal.Location = new System.Drawing.Point(121, 184);
+            this.comboBoxFFinal.Name = "comboBoxFFinal";
+            this.comboBoxFFinal.Size = new System.Drawing.Size(288, 20);
+            this.comboBoxFFinal.TabIndex = 36;
+            // 
+            // comboBoxFInicio
+            // 
+            this.comboBoxFInicio.Location = new System.Drawing.Point(121, 152);
+            this.comboBoxFInicio.Name = "comboBoxFInicio";
+            this.comboBoxFInicio.Size = new System.Drawing.Size(288, 20);
+            this.comboBoxFInicio.TabIndex = 37;
+            // 
             // Contrato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1018, 557);
+            this.Controls.Add(this.comboBoxFInicio);
+            this.Controls.Add(this.comboBoxFFinal);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btncontrato);
-            this.Controls.Add(this.comboBoxFFinal);
-            this.Controls.Add(this.comboBoxFInicio);
             this.Controls.Add(this.comboBoxEmpleado);
             this.Controls.Add(this.comboBoxCargo);
             this.Controls.Add(this.comboBoxTContrato);
@@ -372,8 +370,6 @@
         private System.Windows.Forms.ComboBox comboBoxTContrato;
         private System.Windows.Forms.ComboBox comboBoxCargo;
         private System.Windows.Forms.ComboBox comboBoxEmpleado;
-        private System.Windows.Forms.ComboBox comboBoxFInicio;
-        private System.Windows.Forms.ComboBox comboBoxFFinal;
         private System.Windows.Forms.Button btncontrato;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
@@ -382,5 +378,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DateTimePicker comboBoxFFinal;
+        private System.Windows.Forms.DateTimePicker comboBoxFInicio;
     }
 }

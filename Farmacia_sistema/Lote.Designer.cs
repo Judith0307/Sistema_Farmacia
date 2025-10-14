@@ -34,12 +34,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtfabricacion = new System.Windows.Forms.TextBox();
-            this.txtvencimiento = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtpreciototal = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtfechaventa = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtpreciounidad = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -59,6 +56,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtvencimiento = new System.Windows.Forms.DateTimePicker();
+            this.txtfabricacion = new System.Windows.Forms.DateTimePicker();
+            this.txtfechaventa = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -118,20 +118,6 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Farmacia VidaSalud";
             // 
-            // txtfabricacion
-            // 
-            this.txtfabricacion.Location = new System.Drawing.Point(635, 201);
-            this.txtfabricacion.Name = "txtfabricacion";
-            this.txtfabricacion.Size = new System.Drawing.Size(310, 20);
-            this.txtfabricacion.TabIndex = 19;
-            // 
-            // txtvencimiento
-            // 
-            this.txtvencimiento.Location = new System.Drawing.Point(635, 175);
-            this.txtvencimiento.Name = "txtvencimiento";
-            this.txtvencimiento.Size = new System.Drawing.Size(310, 20);
-            this.txtvencimiento.TabIndex = 21;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -158,13 +144,6 @@
             this.label6.Size = new System.Drawing.Size(91, 18);
             this.label6.TabIndex = 22;
             this.label6.Text = "Precio total: ";
-            // 
-            // txtfechaventa
-            // 
-            this.txtfechaventa.Location = new System.Drawing.Point(635, 123);
-            this.txtfechaventa.Name = "txtfechaventa";
-            this.txtfechaventa.Size = new System.Drawing.Size(310, 20);
-            this.txtfechaventa.TabIndex = 25;
             // 
             // label7
             // 
@@ -351,12 +330,36 @@
             this.dataGridView1.TabIndex = 41;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // txtvencimiento
+            // 
+            this.txtvencimiento.Location = new System.Drawing.Point(635, 175);
+            this.txtvencimiento.Name = "txtvencimiento";
+            this.txtvencimiento.Size = new System.Drawing.Size(310, 20);
+            this.txtvencimiento.TabIndex = 42;
+            // 
+            // txtfabricacion
+            // 
+            this.txtfabricacion.Location = new System.Drawing.Point(635, 201);
+            this.txtfabricacion.Name = "txtfabricacion";
+            this.txtfabricacion.Size = new System.Drawing.Size(310, 20);
+            this.txtfabricacion.TabIndex = 43;
+            // 
+            // txtfechaventa
+            // 
+            this.txtfechaventa.Location = new System.Drawing.Point(635, 123);
+            this.txtfechaventa.Name = "txtfechaventa";
+            this.txtfechaventa.Size = new System.Drawing.Size(310, 20);
+            this.txtfechaventa.TabIndex = 44;
+            // 
             // Lote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1050, 612);
+            this.Controls.Add(this.txtfechaventa);
+            this.Controls.Add(this.txtfabricacion);
+            this.Controls.Add(this.txtvencimiento);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnlote);
             this.Controls.Add(this.panel1);
@@ -372,13 +375,10 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtpreciounidad);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtfechaventa);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtpreciototal);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtvencimiento);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtfabricacion);
             this.Controls.Add(this.txtcodigolote);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtcodigo);
@@ -406,12 +406,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtfabricacion;
-        private System.Windows.Forms.TextBox txtvencimiento;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtpreciototal;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtfechaventa;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtpreciounidad;
         private System.Windows.Forms.Label label9;
@@ -431,5 +428,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DateTimePicker txtvencimiento;
+        private System.Windows.Forms.DateTimePicker txtfabricacion;
+        private System.Windows.Forms.DateTimePicker txtfechaventa;
     }
 }
