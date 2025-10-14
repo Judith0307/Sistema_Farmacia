@@ -166,7 +166,6 @@
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Size = new System.Drawing.Size(288, 20);
             this.txtcodigo.TabIndex = 11;
-            this.txtcodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtdetalles
             // 
@@ -174,7 +173,6 @@
             this.txtdetalles.Name = "txtdetalles";
             this.txtdetalles.Size = new System.Drawing.Size(295, 20);
             this.txtdetalles.TabIndex = 12;
-            this.txtdetalles.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtobservacion
             // 
@@ -182,7 +180,6 @@
             this.txtobservacion.Name = "txtobservacion";
             this.txtobservacion.Size = new System.Drawing.Size(295, 20);
             this.txtobservacion.TabIndex = 13;
-            this.txtobservacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // comboBoxTContrato
             // 

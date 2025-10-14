@@ -109,7 +109,6 @@
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Size = new System.Drawing.Size(268, 20);
             this.txtcodigo.TabIndex = 10;
-            this.txtcodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -127,7 +126,6 @@
             this.txtobservacion.Name = "txtobservacion";
             this.txtobservacion.Size = new System.Drawing.Size(268, 20);
             this.txtobservacion.TabIndex = 12;
-            this.txtobservacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -145,7 +143,6 @@
             this.txtdni.Name = "txtdni";
             this.txtdni.Size = new System.Drawing.Size(268, 20);
             this.txtdni.TabIndex = 14;
-            this.txtdni.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -163,7 +160,6 @@
             this.txtapellido.Name = "txtapellido";
             this.txtapellido.Size = new System.Drawing.Size(268, 20);
             this.txtapellido.TabIndex = 16;
-            this.txtapellido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
@@ -181,7 +177,6 @@
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(268, 20);
             this.txtnombre.TabIndex = 18;
-            this.txtnombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txttelefono
             // 
@@ -189,7 +184,6 @@
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.Size = new System.Drawing.Size(268, 20);
             this.txttelefono.TabIndex = 20;
-            this.txttelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label7
             // 
@@ -217,7 +211,6 @@
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(268, 20);
             this.txtcorreo.TabIndex = 22;
-            this.txtcorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
             // 
@@ -295,7 +288,6 @@
             this.txtdireccion.Name = "txtdireccion";
             this.txtdireccion.Size = new System.Drawing.Size(268, 20);
             this.txtdireccion.TabIndex = 32;
-            this.txtdireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtedad
             // 
@@ -303,7 +295,6 @@
             this.txtedad.Name = "txtedad";
             this.txtedad.Size = new System.Drawing.Size(268, 20);
             this.txtedad.TabIndex = 33;
-            this.txtedad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // comboBoxDocumento
             // 
