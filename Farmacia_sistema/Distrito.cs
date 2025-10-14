@@ -40,6 +40,7 @@ namespace Farmacia_sistema
         private void Distrito_Load(object sender, EventArgs e)
         {
             this.CargarProvincia();
+            this.CargarDepartamento();
         }
 
         private void btndistrito_Click(object sender, EventArgs e)
@@ -90,6 +91,32 @@ namespace Farmacia_sistema
                 comboBox1.DisplayMember = "nombre_provincia"; // Lo que se mostrará
                 comboBox1.ValueMember = "idprovincia";       // El valor interno (oculto)
                 comboBox1.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
+
+                conexionBD.CerrarConexion();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar provincia: " + ex.Message);
+            }
+        }
+
+        private void CargarDepartamento()
+        {
+            try
+            {
+                ConexionBD conexionBD = new ConexionBD();
+                MySqlConnection conexion = conexionBD.AbrirConexion();
+
+                string query = "SELECT iddepartamento, nombre_departamento FROM provincia ORDER BY nombre_departamento ASC";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conexion);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                comboBox3.DataSource = dt;             // Asigna los datos al ComboBox
+                comboBox3.DisplayMember = "nombre_departamento"; // Lo que se mostrará
+                comboBox3.ValueMember = "iddepartamento";       // El valor interno (oculto)
+                comboBox3.SelectedIndex = -1;            // Ningún ítem seleccionado al inicio
 
                 conexionBD.CerrarConexion();
             }
